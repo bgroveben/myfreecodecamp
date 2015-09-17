@@ -43,7 +43,13 @@
   <li>thunder</li>
   <li>other cats</li>
 </ol>
-<input type="text" placeholder="cat photo URL">
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
 
 
 <!-- <p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
