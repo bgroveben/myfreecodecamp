@@ -1,5 +1,5 @@
 Free Code Camp -- 800 hours (or so) of practice.
 
-http://www.freecodecamp.com/challenges/waypoint-comment-your-javascript-code
+http://www.freecodecamp.com/challenges/waypoint-use-bracket-notation-to-find-the-nthtolast-character-in-a-string
 
-On to Javascript!
+Javascript/Basics/dataStructures.js
