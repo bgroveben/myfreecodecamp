@@ -155,3 +155,78 @@ var myArray = [["pi", 3.14]];
 // You'll learn about functions soon.
 if(typeof(myArray) !== "undefined"){(function(){return myArray;})();}
 console.log(myArray);
+
+
+// var ourArray = [1,2,3];
+// var ourData = ourArray[0]; // equals 1
+var myArray = [1,2,3];
+// Only change code below this line.
+var myData = myArray[0];
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+if(typeof(myArray) !== "undefined" && typeof(myData) !== "undefined"){(function(y,z){return 'myArray = ' + JSON.stringify(y) + ', myData = ' + JSON.stringify(z);})(myArray, myData);}
+console.log(myData);
+
+
+var ourArray = [1,2,3];
+ourArray[1] = 3;
+// ourArray[1] now equals [1,3,3].
+var myArray = [1,2,3];
+// Only change code below this line.
+
+myArray[0] = 3;
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+if(typeof(myArray) !== "undefined"){(function(){return myArray;})();}
+console.log(myArray);
+
+
+// var numbers = [1,2,3];
+// console.log(numbers); // logs [1,2,3]
+// var removed = numbers.pop();
+// console.log(numbers); // logs [1,2]
+// console.log(removed); // logs 3
+var myArray = ["John", 23, ["cat", 2]];
+// Only change code below this line.
+var removed = myArray.pop(); // This should be ["cat", 2] and myArray should now be ["John", 23]
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+(function(y, z){return 'myArray = ' + JSON.stringify(y) + ' & removed = ' + JSON.stringify(z);})(myArray, removed);
+console.log(myArray);
+console.log(removed);
+
+
+var ourArray = ["Stimpson", "J", ["cat"]];
+ourArray.pop();
+ourArray.push(["happy", "joy"]);
+// ourArray now equals ["Stimpson", "J", ["happy", "joy"]].
+console.log(ourArray);
+var myArray = ["John", 23, ["cat", 2]];
+myArray.pop();
+// Add a ["dog", 3] to the end of myArray using push().
+// Only change code below this line.
+console.log(myArray);
+myArray.push(["dog", 3]);
+console.log(myArray);
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+(function(z){return 'myArray = ' + JSON.stringify(z);})(myArray);
+
+
+var ourArray = ["Stimpson", "J", ["cat"]];
+ourRemoved = ourArray.shift();
+// ourArray now equals ["J", ["cat"]].
+console.log(ourRemoved);
+var myArray = ["John", 23, ["dog", 3]];
+// Only change code below this line.
+console.log(myArray);
+var myRemoved = myArray.shift(); // This should be ["John"] and myArray should now be [23, ["dog", 3]].
+console.log(myRemoved);
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+(function(y, z){return 'myArray = ' + JSON.stringify(y) + ' & myRemoved = ' + JSON.stringify(z);})(myArray, myRemoved);
