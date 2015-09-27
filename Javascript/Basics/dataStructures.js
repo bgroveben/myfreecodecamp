@@ -230,3 +230,21 @@ console.log(myRemoved);
 // We use this function to show you the value of your variable in your output box.
 // You'll learn about functions soon.
 (function(y, z){return 'myArray = ' + JSON.stringify(y) + ' & myRemoved = ' + JSON.stringify(z);})(myArray, myRemoved);
+
+
+var ourArray = ["Stimpson", "J", ["cat"]];
+ourArray.shift();
+// ourArray now equals ["happy", "J", ["cat"]]
+ourArray.unshift("happy");
+console.log(ourArray);
+var myArray = ["John", 23, ["dog", 3]];
+myArray.shift();
+console.log(myArray);
+// Add "Paul" to the start of myArray.
+// Only change code below this line.
+myArray.unshift("Paul");
+console.log(myArray);
+// Only change code above this line.
+// We use this function to show you the value of your variable in your output box.
+// You'll learn about functions soon.
+(function(y, z){return 'myArray = ' + JSON.stringify(y);})(myArray);
