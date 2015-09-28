@@ -1,5 +1,5 @@
 Free Code Camp -- 800 hours (or so) of practice.
 
-http://www.freecodecamp.com/challenges/waypoint-generate-random-whole-numbers-with-javascript
+http://www.freecodecamp.com/challenges/waypoint-create-a-javascript-slot-machine
 
-Javascript/Basics/FunctionsEtc.js
+Time to build a slot machine!
