@@ -49,3 +49,38 @@ function factorialize(num) {
   }
 }
 console.log(factorialize(5, ''));
+
+
+// Return true if the given string is a palindrome. Otherwise, return false.
+function palindrome(str) {
+  str = str.toLowerCase();
+  // Remove punctuation and spaces.
+  var rmStr= str.replace(/[^A-Z0-9]/ig, '');
+  // Reverse the string.
+  var revStr = rmStr.replace(rmStr, rmStr.split('').reverse().join(''));
+  // Return true or false if it's a palindrome.
+  return revStr === rmStr;
+}
+// I tried chaining these methods together in fewer lines, but that was too confusing.
+console.log(palindrome("RaceCAr"));
+console.log(palindrome("Was it a car or a CAT I saw"));
+
+
+// Return the length of the longest word in the provided sentence.
+// Your response should be a number.
+function findLongestWord(str) {
+  var words = str.split(' ');
+  var longest = 0;  // Set initial longest word length to zero.
+  for (var w = 0; w < words.length; w++){  // Loop through each word in the string.
+    if (longest < words[w].length) {  // If the next word is longer than the previous word,
+      longest = words[w].length;      // set var longest to the next word.
+    }
+  }
+  return longest;
+}
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+console.log(findLongestWord("This is just another test."));
+
+
+// Return the provided string with the first letter of each word capitalized.
+// Make sure the rest of the word is in lower case.
