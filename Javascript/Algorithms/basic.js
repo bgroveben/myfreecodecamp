@@ -84,3 +84,19 @@ console.log(findLongestWord("This is just another test."));
 
 // Return the provided string with the first letter of each word capitalized.
 // Make sure the rest of the word is in lower case.
+function titleCase(str) {
+  // Split string into an array.
+  var words = str.split(" ");
+  // Loop through each word in the array.
+  for (var w = 0; w < words.length; w++) {
+    // Capitalize the first letter of each word using charAt(),
+    // use substring() to extract the remaining letters in each word and make them lower case,
+    // then use the + operator to concatenate each string in the array.
+    words[w] = words[w].charAt(0).toUpperCase() + words[w].substring(1).toLowerCase();
+  }
+  // Once each string in the array is capitalized, convert the array to a string.
+  return words.join(" ");
+}
+console.log(titleCase("I'm a little tea pot", ""));
+console.log(titleCase("sHoRt AnD sToUt", ""));
+console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT", ""));
