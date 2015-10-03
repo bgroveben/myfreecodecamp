@@ -100,3 +100,23 @@ function titleCase(str) {
 console.log(titleCase("I'm a little tea pot", ""));
 console.log(titleCase("sHoRt AnD sToUt", ""));
 console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT", ""));
+
+
+// Return an array consisting of the largest number from each provided sub-array.
+// For simplicity, the provided array will contain exactly 4 sub-arrays.
+function largestOfFour(arr) {
+  var result = [];  // Initialize empty array for answer
+    for (var a = 0; a < arr.length; a++) {  // Iterate through outer array
+      var largestNum = 0;  //  Set initial maximum
+      for (var b = 0; b < arr[a].length; b++) {  // Iterate through sub-arrays
+        if (largestNum < arr[a][b]) {  // If the next number is greater than the previous number,
+          largestNum = arr[a][b];  // set the next number to the new maximum
+        }
+      }
+    result.push(largestNum);  // Add that number to the answer array and move to the next sub-array
+  }
+  return result;
+}
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]], ""));
+// For more elegant solutions, got to:
+// https://stackoverflow.com/questions/31094820/search-an-array-consisting-of-sub-arrays-for-the-largest-number-and-return-in-a
