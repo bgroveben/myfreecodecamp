@@ -118,5 +118,17 @@ function largestOfFour(arr) {
   return result;
 }
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]], ""));
-// For more elegant solutions, got to:
+// For more elegant solutions, go to:
 // https://stackoverflow.com/questions/31094820/search-an-array-consisting-of-sub-arrays-for-the-largest-number-and-return-in-a
+
+
+// Check if a string (first argument) ends with the given target string (second argument).
+/*function end(str, target) {
+    return target === str.substr(str.length - target.length);
+}
+*/
+function end(str, target) {
+    return target.length > 0 && target === str.substr(str.length - target.length);
+} /* Without the 'target.length > 0' part, an empty string as the 'target' argument would return true */
+console.log(end("Hello World", "World", ""));
+console.log(end("Bastian", "n", ""));
