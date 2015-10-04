@@ -132,3 +132,15 @@ function end(str, target) {
 } /* Without the 'target.length > 0' part, an empty string as the 'target' argument would return true */
 console.log(end("Hello World", "World", ""));
 console.log(end("Bastian", "n", ""));
+
+
+// Repeat a given string (first argument) n times (second argument). Return an empty string if n is a negative number.
+function repeat(str, num) {
+  if (num < 1) {
+    var result = str.repeat(0);
+  } else {
+    result = str.repeat(num);
+  }
+  return result
+}
+console.log(repeat("abc", 3, ""));
