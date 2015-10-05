@@ -144,3 +144,48 @@ function repeat(str, num) {
   return result
 }
 console.log(repeat("abc", 3, ""));
+
+
+// Truncate a string (first argument) if it is longer than the given maximum string length (second argument).
+// Return the truncated string with a "..." ending.
+// Note that the three dots at the end add to the string length.
+function truncate(str, num) {
+  if (str.length > num) {
+    var result = (str.slice(0, (num - 3)) + "...");
+  } else {
+    result = str;
+  }
+  return result;
+}
+console.log(truncate("A-tisket a-tasket A green and yellow basket", 20, ""));
+console.log(truncate("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2, ""));
+
+
+// Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a multidimensional array.
+// The solution below works, but I think the one using array.splice() is cleaner and more elegant.
+/*function chunk(arr, size) {
+  var newArray = [];
+  var subArrayIndex = 0;
+  while (subArrayIndex < arr.length) {
+    newArray.push(arr.slice(subArrayIndex, subArrayIndex += size));
+  }
+  return newArray;
+}
+*/
+function chunk(arr, size) {
+  var newArray = [];
+  while (arr.length > 0) {
+    newArray.push(arr.splice(0, size));
+  }
+  return newArray;
+}
+console.log(chunk(["a", "b", "c", "d"], 2, ""));
+
+
+// Return the remaining elements of an array after chopping off n elements from the head.
+function slasher(arr, howMany) {
+  arr.splice(0, howMany);
+  return arr;
+}
+console.log(slasher([1, 2, 3], 2, ""));
+console.log(slasher([1, 2, 3], 0, ""));
