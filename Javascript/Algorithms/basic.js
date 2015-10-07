@@ -204,3 +204,24 @@ function mutation(arr) {
 }
 console.log(mutation(["hello", "neo"], ""));
 console.log(mutation(["Alien", "line"], ""));
+
+
+// Remove all falsy values from an array.
+// Falsy values in javascript are false, null, 0, "", undefined, and NaN.
+/* Using a for loop:
+function bouncer(arr) {
+  result = []
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) {
+       result.push(arr[i]);
+    }
+  }
+  return result;
+}
+*/
+// Using array.filter():
+function bouncer(arr) {
+   var result = arr.filter(function(a){return a; });
+   return result;
+}
+console.log(bouncer([7, "ate", "", false, 9], ""));
