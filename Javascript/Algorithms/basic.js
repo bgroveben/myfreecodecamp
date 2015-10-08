@@ -221,7 +221,19 @@ function bouncer(arr) {
 */
 // Using array.filter():
 function bouncer(arr) {
-   var result = arr.filter(function(a){return a; });
-   return result;
+   return arr.filter(function(a){return a; });
 }
 console.log(bouncer([7, "ate", "", false, 9], ""));
+
+
+// You will be provided with an initial array (the first argument in the destroyer function),
+// followed by one or more arguments.
+// Remove all elements from the initial array that are of the same value as these arguments.
+function destroyer(arr) {
+  // Create an array that excludes the first argument.
+  args = arr.slice.call(arguments).splice(1, arr.length);
+  // If an array item in the first argument occurs in any subsequent arguments, exclude it from the result.
+  return arr.filter(function(item) { return args.indexOf(item) === -1; });
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3, ""));
