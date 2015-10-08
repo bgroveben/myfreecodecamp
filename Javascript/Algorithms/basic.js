@@ -235,5 +235,14 @@ function destroyer(arr) {
   // If an array item in the first argument occurs in any subsequent arguments, exclude it from the result.
   return arr.filter(function(item) { return args.indexOf(item) === -1; });
 }
-
 console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3, ""));
+
+
+// Return the lowest index at which a value (second argument) should be inserted into a sorted array (first argument).
+// For example, where([1,2,3,4], 1.5) should return 1 because it is greater than 1 (0th index), but less than 2 (1st index).
+function where(arr, num) {
+  arr.push(num);
+  return arr.sort(function(a, b) {return a - b;}).indexOf(num);
+}
+console.log(where([5, 3, 20, 3], 3));
+console.log(where([2, 5, 10], 15));
