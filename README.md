@@ -1,6 +1,6 @@
 Free Code Camp -- 800 hours (or so) of practice.
 
-http://www.freecodecamp.com/challenges/bonfire-sum-all-numbers-in-a-range
+http://www.freecodecamp.com/challenges/bonfire-diff-two-arrays
 
 Intermediate Algorithm Scripting
 Javascript/Algorithms/intermediate.js
