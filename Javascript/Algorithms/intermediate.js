@@ -25,6 +25,7 @@ function sumAll(arr) {
 console.log(sumAll());
 console.log(sumAll([5, 10]));
 console.log(sumAll([10, 5]));
+console.log("");
 
 
 // Bonfire: Diff Two Arrays
@@ -45,7 +46,7 @@ function diff(arr1, arr2) {
   }
   return newArr;
 }
-// This solution also works, but I found it on Stack Overflow so it doesn't count
+// This solution also works, but I found it on Stack Overflow so it doesn't count.
 /* function diff(arr1, arr2) {
   for (var i in arr1) {
     for (var j in arr2) {
@@ -59,3 +60,28 @@ function diff(arr1, arr2) {
 console.log(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]));
 console.log(diff([1, "calf", 3, "piglet"], [1, "calf", 3, 4]));
 console.log(diff([], ["snuffleupagus", "cookie monster", "elmo"]));
+console.log("");
+
+
+// Bonfire: Roman Numeral Converter
+// Convert the given number into a roman numeral.
+// All roman numerals answers should be provided in upper-case.
+function convert(num) {
+    // Set up an associative array (hash) mapping Roman to Arabic numbers from 50 down to 1.
+    // The numbers must be descending instead of ascending or 24 will result in 'I' 24 times.
+    var romanNumbers = {L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1};
+    var result = "";  // Initialize answer as empty string.
+    var i = 0;  //  Start counting at 0; null also works.
+    for (i in romanNumbers) {  // Loop through the hash.
+        // Find the highest roman numeral that num corresponds to.
+        // That is why the hash contains IV but not VI.
+        while (num >= romanNumbers[i]) {
+        	result += i;  // Append the roman numeral to the result.
+            num -= romanNumbers[i]; /* Subtract the amount added to the result from the number given in the argument, eg. if we start with 36 and an X is appended to the result string, we should have 26 remaining, then another X is appended, and we have 16 remaining, and on down to 0. If you f**k this up your browser will crash.*/
+        }
+    }
+    return result;
+}
+console.log(convert(12));
+console.log(convert(36));
+console.log("");
