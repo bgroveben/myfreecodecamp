@@ -37,3 +37,26 @@ ourStr += anAdjective;
 var someAdjective = "fun!";
 var myStr = "Learning to code is ";
 myStr += someAdjective;
+
+// Setup
+var myStr = "Jello World";
+// Only change code below this line
+myStr = "Hello World"; // Fix Me
+
+// Read from myArray using bracket notation so that myData is equal to 8
+// Setup
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+// Only change code below this line.
+var myData = myArray[2][1];
+
+// Example
+function ourFunction(a, b) {
+  console.log(a - b);
+}
+ourFunction(10, 5); // Outputs 5
+// Only change code below this line.
+// Create a function called myFunction that accepts two argguments and outputs their sum to the dev console.
+function myFunction(first, second) {
+  console.log(first + second);
+}
+myFunction('my', 'Function');
