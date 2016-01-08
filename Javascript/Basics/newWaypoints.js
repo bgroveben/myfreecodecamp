@@ -86,3 +86,49 @@ function fun2() {
 }
 console.log(fun1());
 console.log(fun2());
+
+
+// Instructions: Declare a local variable myVar inside myFunction
+function myFunction() {
+  'use strict';
+
+  var myVar = "bar";
+  console.log(myVar);
+}
+console.log(myFunction());
+// console.log(myVar);  ## Uncomment this line to see a Reference error
+
+/*
+It is possible to have both local and global variables with the same name.
+When you do this, the local variable takes precedence over the global variable.
+This sounds like a bad idea in practice.
+*/
+// Setup
+var outerWear = "T-Shirt";
+function myFunction() {
+  // Only change code below this line
+  var outerWear = "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+console.log(myFunction());
+
+// Example
+function minusSeven(num) {
+  return num - 7;
+}
+// Only change code below this line
+function timesFive(number) {
+  return number * 5;
+}
+console.log(timesFive(5));
+
+// Call the process function with an argument of 7 and assign its return value to the variable processed.
+// Setup
+var processed = 0;
+function process(num) {
+  return (num + 3) / 5;
+}
+// Only change code below this line
+processed = process(7);
+console.log(processed);
