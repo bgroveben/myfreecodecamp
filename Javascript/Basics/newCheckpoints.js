@@ -27,3 +27,27 @@ The first element in each sub-array should contain a string with the name of the
 There should be at least 5 sub-arrays in the list
 */
 var myList = [["level1", 1], ["level2", 2], ["level3", 3], ["level4", 4], ["level5", 5]];
+
+
+/*
+Checkpoint: Stand in Line
+In Computer Science a queue is an abstract Data Structure where items are kept in order.
+New items can be added at the back of the queue and old items are taken off from the front of the queue.
+Write a function queue which takes an "array" and an "item" as arguments.
+Add the item onto the end of the array, then remove the first element of the array.
+The queue function should return the element that was removed.
+*/
+// Setup
+var myArr = [1,2,3,4,5];
+function queue(arr, item) {
+  arr.push(item);
+  result = arr[0];
+  arr.shift();
+  return result;
+}
+// Display Code
+console.log("Before: " + JSON.stringify(myArr));
+console.log(queue(myArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(myArr));
+console.log(queue([], 1));
+console.log(queue([2], 1));
