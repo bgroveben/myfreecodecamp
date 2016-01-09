@@ -26,3 +26,31 @@ function logicalAnd(val) {
 console.log(logicalAnd(30));
 console.log(logicalAnd(55));
 console.log(logicalAnd(15));
+console.log();
+
+// Combine the two if statements into one statement which returns "Outside" if val is not
+// between 10 an 20, inclusive.
+// Otherwise, return "Inside".
+function twoIfs(val) {
+  if (val < 10) {
+    return "Outside";
+  }
+  if (val > 20) {
+    return "Outside";
+  }
+  return "Inside";
+}
+console.log(twoIfs(15));
+console.log(twoIfs(9));
+console.log(twoIfs(21));
+
+function logicalOr (val) {
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+  return "Inside";
+}
+console.log(logicalOr(15));
+console.log(logicalOr(9));
+console.log(logicalOr(21));
+console.log();
