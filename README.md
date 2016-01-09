@@ -13,4 +13,4 @@ http://codepen.io/bgroveben/pen/qOXEwZ
 
 Whoa! WaitAMinute! FCC has a bunch of new exercises added, so I'm going to fill in the blanks.
 
-http://www.freecodecamp.com/challenges/waypoint-introducing-else-statements
+http://www.freecodecamp.com/challenges/checkpoint-golf-code
