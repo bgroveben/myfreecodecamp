@@ -180,3 +180,53 @@ function myTest(val) {
 }
 // Change this value to test
 myTest(10);
+
+// Instructions: Add the greater than operator to the indicated lines so that the return statements make sense.
+function myTest(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+// Change this value to test
+myTest(10);
+
+// Instructions: Add the greater than equal to operator to the indicated lines so that
+// the return statements make sense
+function myTest(val) {
+  if (val >= 20) {
+    return "20 or Over";
+  }
+  if (val >= 10) {
+    return "10 or Over";
+  }
+  return "9 or Under";
+}
+console.log(myTest(10));
+
+// Add the less than operator to the indicated lines so that the return statements make sense.
+function myTest(val) {
+  if (val < 25) {
+    return "Under 25";
+  }
+  if (val < 55) {
+    return "Under 55";
+  }
+  return "55 or Over";
+}
+console.log(myTest(35));
+
+// Add the less than equal to operator to the indicated lines so that the return statements make sense.
+function myTest(val) {
+  if (val <= 12) {
+    return "Smaller Than or Equal to 12";
+  }
+  if (val <= 24) {
+    return "Smaller than or Equal to 24";
+  }
+  return "25 or More";
+}
+console.log(myTest(15));
