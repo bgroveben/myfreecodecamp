@@ -132,3 +132,51 @@ function process(num) {
 // Only change code below this line
 processed = process(7);
 console.log(processed);
+
+
+// Instructions: Add the equality operator to the indicated line so that the function will return "Equal"
+// when val is equivalent to 12
+function myTest(val) {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+// Change this value to test
+myTest(10);
+
+// Instructions: Use strict equality operator in if statement so the function will return "Equal"
+// when val is strictly equal to 7
+function myTest(val) {
+  if (val === 7) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+// Change this value to test
+myTest(10);
+
+// Instructions: Add the inequality operator != in the if statement so that the function will return
+// "Not Equal" when val is not equivalent to 99
+function myTest(val) {
+  if (val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+// Change this value to test
+myTest(10);
+
+// Instructions: Add the strict inequality operator to the if statement so the function will return
+// "Not Equal" when val is not strictly equal to 17
+// Setup
+function myTest(val) {
+  // Only Change Code Below this Line
+  if (val !== 17) {
+  // Only Change Code Above this Line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+// Change this value to test
+myTest(10);
