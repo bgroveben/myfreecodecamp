@@ -18,6 +18,7 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 }
 // Change the words here to test your function
 console.log(wordBlanks("dog", "big", "ran", "quickly"));
+console.log();
 
 
 /*
@@ -51,3 +52,33 @@ console.log(queue(myArr, 6)); // Modify this line to test
 console.log("After: " + JSON.stringify(myArr));
 console.log(queue([], 1));
 console.log(queue([2], 1));
+console.log();
+
+/*
+Checkpoint: Golf Code
+In the game of golf each hole has a par for the average number of strokes needed to sink the ball. Depending on how far above or below par your strokes are, there is a different nickname.
+
+Your function will be passed a par and strokes. Return strings according to this table (based on order of priority - top (highest) to bottom (lowest)):
+par and strokes will always be numeric and positive.
+*/
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return "Hole-in-one!";
+  } else if (strokes <= (par - 2)) {
+    return "Eagle";
+  } else if (strokes == (par - 1)) {
+    return "Birdie";
+  } else if (strokes == par) {
+    return "Par";
+  } else if (strokes == (par + 1)) {
+    return "Bogey";
+  } else if (strokes == (par + 2)) {
+    return "Double Bogey";
+  } else {
+    return "Go Home!";
+  }
+}
+console.log(golfScore(5, 4));
+console.log(golfScore(4, 2));
+console.log(golfScore(4, 1));
+console.log();
