@@ -94,3 +94,65 @@ delete myDog.tails;
 console.log(ourDog);
 console.log(myDog);
 console.log();
+
+
+/*
+Instructions: Convert the switch statement into a lookup table called lookup.
+Use it to look up val and return the associated string:
+*/
+function switchPhoneticLookup(val) {
+  var result = "";
+  switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+  return result;
+}
+console.log(switchPhoneticLookup("charlie"));
+// This is an example of part of a reverse alphabet lookup:
+var alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+// ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+console.log(alpha[2]);
+console.log(alpha[24]);
+var value = 2;
+console.log(alpha[value]);
+console.log();
+// Now it's conversion time:
+function tablePhoneticLookup(val) {
+  var result = "";
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+  result = lookup[val];
+  return result;
+}
+console.log(tablePhoneticLookup("charlie"));
+console.log(tablePhoneticLookup("echo"));
+console.log();
