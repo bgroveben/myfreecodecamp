@@ -68,3 +68,29 @@ var testObj = {
 };
 var playerNumber = 16;
 var player = testObj[playerNumber];
+
+
+/*
+Instructions: Add a "bark" property to myDog and set it to a dog sound, such as "woof".
+You may use either dot or bracket notation.
+*/
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+ourDog.bark = "bow-wow";
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"]
+};
+myDog["bark"] = "Hell Yeah!";
+// Now delete the "tails" property from myDog using either dot or bracket notation.
+// FCC's linter favors dot notation for individual words like "tails".
+delete myDog.tails;
+console.log(ourDog);
+console.log(myDog);
+console.log();
