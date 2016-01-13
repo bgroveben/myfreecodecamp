@@ -179,6 +179,7 @@ function checkObj(checkProp) {
 console.log(checkObj("gift"));
 console.log(checkObj("pet"));
 console.log(checkObj("something else"));
+console.log();
 
 
 /*
@@ -208,4 +209,80 @@ var myMusic = [
   }
 ];
 console.log(myMusic);
+console.log();
+
+
+// Waypoint: Accessing nested objects in JSON.
+// Nested JSON Object:
+var ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": {
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+console.log(ourStorage.cabinet["top drawer"].folder2);
+console.log(ourStorage.desk.drawer);
+/*
+Instructions: Access the myStorage JSON object to retrieve the contents of th glove box.
+Only use object notation for properties witha space in their name.
+*/
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+console.log();
+
+
+// Waypoint: Accessing nested arrays in JSON
+// How to access a nested array:
+var ourPets = {
+  "cats": [
+    "Meowzer",
+    "Fluffy",
+    "Kit-Cat"
+  ],
+  "dogs": [
+    "Spot",
+    "Bowser",
+    "Frankie"
+  ]
+};
+console.log(ourPets.cats[1]);
+console.log(ourPets.dogs[0]);
+// Instructions: Retrieve the second tree from the variable myPlants using object dot and array bracket notation.
+var myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+var secondTree = myPlants[1].list[1];
+console.log(secondTree);
 console.log();
