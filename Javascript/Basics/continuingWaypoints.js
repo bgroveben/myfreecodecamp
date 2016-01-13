@@ -156,3 +156,56 @@ function tablePhoneticLookup(val) {
 console.log(tablePhoneticLookup("charlie"));
 console.log(tablePhoneticLookup("echo"));
 console.log();
+
+
+/*
+Instructions
+Modify the function checkObj to test myObj for checkProp. I
+f the property is found, return that property's value.
+If not, return "Not Found".
+*/
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp) === true) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+console.log(checkObj("gift"));
+console.log(checkObj("pet"));
+console.log(checkObj("something else"));
+
+
+/*
+Waypoint: Introducing JavaScript Object Notation JSON
+Instructions: Add a new album to the myMusic JSON object.
+Add artist and title strings, release_year number, and a formats array of strings.
+*/
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1993,
+    "formats": [
+      "CS",
+      "8T",
+      "LP" ],
+    "gold": true
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [
+      "CD",
+      "Cassette",
+      "LP" ],
+  }
+];
+console.log(myMusic);
+console.log();
