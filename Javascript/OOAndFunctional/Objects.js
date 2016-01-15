@@ -5,6 +5,9 @@ var car = {
   "seats":5
 };
 console.log("A car has: ", car);
+console.log();
+
+
 //Now Let's make a similar Object called motorBike
 //Give it two wheels, one engine and one seat
 var motorBike = {
@@ -16,6 +19,7 @@ var motorBike = {
 };
 (function() {return JSON.stringify(motorBike);})();
 console.log("A motorbike has: ", motorBike);
+console.log();
 
 
 //Constructor functions
@@ -37,6 +41,18 @@ var myMotorBike = new MotorBike();
 console.log(myMotorBike);
 // Only change code above this line.
 (function() {return JSON.stringify(myMotorBike);})();
+console.log();
+
+
+// Waypoint: Make Unique Objects by Passing Parameters to our Constructor
+var Car = function(wheels, seats, engines) {
+  this.wheels = wheels;
+  this.seats = seats;
+  this.engines = engines;
+};
+var myCar = new Car(6,3,1);
+console.log(myCar);
+console.log();
 
 
 // Private properties and methods
@@ -68,6 +84,7 @@ console.log(myBike.getSpeed());
 // console.log(myBike.addUnit()); --> TypeError: undefined is not a function
 // console.log(myBike.speed); --> undefined
 if(myBike.hasOwnProperty('getSpeed')){(function() {return JSON.stringify(myBike.getSpeed());})();};
+console.log();
 
 
 // Make Instances of Objects with a Constructor Function
@@ -83,3 +100,4 @@ console.log("MyCar has ", myCar);
 console.log("MyCar has " + myCar.wheels + " wheels and " + myCar.engines + " engine(s)");
 // Only change code above this line.
 (function() {return JSON.stringify(myCar);})();
+console.log();
