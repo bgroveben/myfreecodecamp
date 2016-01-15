@@ -286,3 +286,62 @@ var myPlants = [
 var secondTree = myPlants[1].list[1];
 console.log(secondTree);
 console.log();
+
+
+// Waypoint : Iterate Odd Numbers with a For Loop
+// First, create an array with even numbers 0-10:
+var ourArray = [];
+for (var i = 0; i < 10; i += 2) {
+  ourArray.push(i);
+}
+console.log(ourArray);
+// Instructions: Push the odd numbers from 1 through 9 to myArray using a for loop:
+var myArray = [];
+for (var i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+console.log(myArray);
+console.log();
+
+
+// Waypoint: Count Backwards with a For Loop
+// Let's start by counting down from 10 to 2 in decrements of 2:
+var thisArray = [];
+for (var i = 10; i > 0; i -= 2) {
+  thisArray.push(i);
+}
+console.log(thisArray);
+// Instructions: Push the odd numbers from 9 through 1 to thatArray using a for loop:
+var thatArray = [];
+for (var i = 9; i > 0; i -= 2) {
+  thatArray.push(i)
+}
+console.log(thatArray)
+console.log();
+
+
+// Waypoint: Iterate through an array with a for loop
+// This code will ouput each element of the array arr to the console:
+var arr = [10,9,8,7,6];
+for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+// Because arrays have zero-based numbering, the last index of the array is length - 1.
+// Our condition for this loop is i < arr.length, which stops when i is at length - 1.
+console.log();
+// Declare and initialize a variable aTotalAgain to 0.
+// Use a for loop to add the value of each element of the anArrayAgain array to total.
+/** Example **/
+var anotherArr = [9, 10, 11, 12];
+var anotherTotal = 0;
+for (var i = 0; i < anotherArr.length; i++) {
+  anotherTotal += anotherArr[i];
+}
+console.log(anotherTotal);
+var anArrayAgain = [2, 3, 4, 5, 6];
+var aTotalAgain = 0;
+for (var i = 0; i < anArrayAgain.length; i++) {
+  aTotalAgain += anArrayAgain[i];
+}
+console.log(aTotalAgain);
+console.log();
