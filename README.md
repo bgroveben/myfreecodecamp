@@ -13,4 +13,4 @@ http://codepen.io/bgroveben/pen/qOXEwZ
 
 Whoa! WaitAMinute! FCC has a bunch of new exercises added, so I'm going to fill in the blanks.
 
-http://www.freecodecamp.com/challenges/waypoint-nesting-for-loops
+http://www.freecodecamp.com/challenges/checkpoint-profile-lookup

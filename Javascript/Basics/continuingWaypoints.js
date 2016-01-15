@@ -345,3 +345,34 @@ for (var i = 0; i < anArrayAgain.length; i++) {
 }
 console.log(aTotalAgain);
 console.log();
+
+
+// Waypoint: Nesting for loops
+// This bit of code will 'flatten' the array and output numbers 1-6 on a new line to the console.
+var multiDimensionalArray = [
+  [1,2], [3,4], [5,6]
+];
+for (var i=0; i < multiDimensionalArray.length; i++) {
+  // In the inner loop, we check the .length of arr[i], since arr[i] is itself an array. Get it?
+  for (var j=0; j < multiDimensionalArray[i].length; j++) {
+    console.log(multiDimensionalArray[i][j]);
+  }
+}
+console.log();
+/*
+Instructions:
+Modify the function multiplyAll so that it multiplies the product variable by each number in the sub-arrays of arr:
+*/
+function multiplyAll(arr) {
+  var product = 1;
+  for (var i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+}
+console.log(multiplyAll([[1],[2],[3]]));
+console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
+console.log(multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]));
+console.log();
